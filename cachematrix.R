@@ -3,7 +3,10 @@
 
 ## Write a short comment describing this function
 
+## this function return an object stores the inversion of matrix 'x'
+
 makeCacheMatrix <- function(x = matrix()) {
+    ## inversion of 'x'
     inv_x <- NULL
     
     set <- function(y) {
@@ -22,7 +25,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## if function makeCacheMatrix has the inversion, return it,
+## otherwise, calculate the inversion, transfer it to 
+## makeCacheMatrix
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
     m <- x$getinv()
